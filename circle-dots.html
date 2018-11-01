@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Circle Dot</title>
+		<link rel="stylesheet" href="style.css">
+</head>
+	<div id="parameters">
+		<h1>CIRCLE DOT</h1>
+		<form>
+
+			<label class="field shape" for="num_circles">Number of circles [<em>#</em>]:</label>
+			<input type ="number" class="inputs" id="num_circles" value="4"/>
+
+			<label class="field shape" for="dist_circles">Distance btw circles [<em>mm</em>]:</label>
+			<input type ="number" class="inputs" id="dist_circles" value="15"/>
+
+			<label class="field shape" for="init_circle_dots">Initial circle #'s dots [<em>#</em>]:</label>
+			<input type ="number" class="inputs" id="init_circle_dots" value="4"/>
+
+			<label class="field shape" for="mult_circles">Dots multipler per circle [<em>#</em>]:</label>
+			<input type ="number" class="inputs" id="mult_circles" value="1.34"/>
+
+			<label class="field printing-param" for="start_height">Start height [<em>mm</em>]:</label>
+			<input type ="number" class="inputs" id="start_height" value="5"/>
+
+			<label class="field printing-param" for="speed">Speed [<em>mm/min</em>]:</label>
+			<input type ="number" class="inputs" id="speed" value="3000"/>
+
+			<label class="field printing-param" for="e_speed">Extrusion speed [<em>mm/min</em>]:</label>
+			<input type ="number" class="inputs" id="e_speed" value="120"/>
+
+			<label class="field printing-param" for="extrusion">Extrusion [<em>mm</em>]:</label>
+			<input type ="number" class="inputs" id="extrusion" value="0.1"/>
+
+			<label class="field printing-param" for="retraction">Retraction [<em>mm</em>]:</label>
+			<input type ="number" class="inputs" id="retraction" value="2"/>
+
+			<button id="gcode" type="button" onclick="createFile();">GCode</button>
+		</form>
+		<canvas id="myCanvas" width="350" height="333">
+		</canvas>
+	</div>
+
+	<script type="text/javascript" src="js/circle-dots.js"></script>
+	<script type="text/javascript" src="js/FileSaver.js"></script>
+	
+</body>
+</html>

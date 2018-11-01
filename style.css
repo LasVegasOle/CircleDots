@@ -1,0 +1,77 @@
+html * {
+    background-color: pink;
+    text-align: center;
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 22px;
+	letter-spacing: -2.2px;
+	word-spacing: 3.4px;
+	color: black;
+	font-weight: 700;
+	text-decoration: none solid rgb(68, 68, 68);
+	font-style: normal;
+	font-variant: small-caps;
+	text-transform: capitalize;
+}
+
+.shape {
+	color: white;
+}
+
+.inputs {
+    background-color: white	;
+	color: grey;
+	width: 200px;
+	border: none; 
+}
+
+.parameters {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 65px;
+	text-decoration: overline solid rgb(0, 0, 0);
+	text-shadow: 3px 3px 0 #FFFFFF;
+	padding-top: 80px;
+}
+
+form {
+	float: left;
+	display: grid;
+	grid-template-columns: 300px 200px;
+    grid-gap: 3px 11px;
+}
+
+label {
+    grid-column: 1 / 2;
+    text-align: right;
+}
+ 
+input {
+    grid-column: 2 / 3;
+}
+
+button {
+	color: black;
+	font-size: 30px;
+	background-color: lightpink;
+	width: 200px;
+	height: 50px; 
+	border: none;
+	grid-column: 2 / 3;	
+	align-content: center;
+}
+
+button:hover {
+	color: hotpink;
+	background-color: white;
+}
+
+canvas {
+	float: left;
+}
+
+/* Reference for grids
+https://css-tricks.com/snippets/css/complete-guide-grid/
+ */
